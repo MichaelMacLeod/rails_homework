@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OfficeSlides</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<a href='/'> Home </a><br>
+<a href='/products'> Products </a><br>
+<a href='/plastic_slides'> Plastic Slides </a><br>
+<a href='/metal_slides'> Metal Slides </a><br>
+
+
+<nav>
+  <ul>
+  <li>
+  <a href='/about_us'>About Us</a>
+  </li>
+  </ul>
+</nav>
+
+<%= yield %>
+
+</body>
+</html>
